@@ -4,13 +4,13 @@ The purpose of this lab is to understand how we can store information in a progr
 
 # Background
 
-The term 'data' is normally used in place of  information. We can store all kinds of information like numbers, booleans(true/false), text, character, etc. You can also store complex and custom grouped structures like Person(name, id, gender, etc) but that will be covered in advance topics. For now we will only store and print simple data types.
+The term `data` is another word for information. A program can store many kinds of data, such as numbers, true/false values, text, and characters. It can also store more complex grouped information, such as a `Person` with a name, ID, and gender. We will cover that in later topics. For now, we will store and print simple data types.
 
-You may be noticing that the word `print` is being used often, this is also usually used to mean `display`.
+You may notice that we use the word `print` often. In programming, it usually means to display something on the screen.
 
-# Variables
+# Data Types
 
-Data types supported in C++ are:
+The following data types are supported in C++:
 
 | Type | Description | Example | Bytes | Typical range |
 | --- | --- | --- | --- | --- |
@@ -22,11 +22,15 @@ Data types supported in C++ are:
 | `double` | A decimal number with more precision. | `double pi = 3.141592653589793;` | Usually 8 | About 15 decimal digits of precision |
 | `std::string` | A sequence of text characters. | `std::string name = "Ada";` | 1 per ASCII character; 1-4 in UTF-8 | No fixed size; limited by available memory |
 
-Exact numeric ranges can vary by computer and compiler. These are the common ranges you will see on modern Windows computers.
+Exact numeric ranges can vary by computer and compiler. These are common ranges on modern Windows computers.
 
 # Let's dive deeper!
 
-In C++, we define a variable x using format: `<data type> x = <value>;`. Here is a program that stores and prints a person's profile using every data type above:
+## Variable
+
+A variable is a named place in a program where you can store a value. You can use its name later to read or change that value.
+
+In C++, define a variable using this format: `<data type> x = <value>;`. Here is a program that stores and prints a person's profile using every data type above:
 
 ```cpp
 #include <iostream>
@@ -53,7 +57,7 @@ int main() {
 }
 ```
 
-Please note that a string is encapsulated using double-quotes `"`, while a character is encapsulated using single-quotes `'`.
+Remember that a string uses double quotes `"`, while a character uses single quotes `'`.
 
 # Task
 
@@ -62,7 +66,7 @@ Create a program that prints the details of a cinema ticket.
 1. Create a file called `data.cpp` in the `labs\lab-01-data-types\` directory.
 2. Add the `iostream` and `string` headers.
 3. Create a `main` function.
-4. Create these variables with your own information:
+4. Create these variables using values you choose:
     - A `std::string` for the movie title.
     - An `int` for the seat number.
     - A `double` for the ticket price.
@@ -78,3 +82,17 @@ Enter in terminal:
 And then run the produced artifact, by running the command:
 
     .\data.exe
+
+# Before you leave
+
+## Constants
+
+A constant variable stores a value that cannot be changed after it is created. Use `const` when a value should stay the same throughout the program.
+
+```cpp
+const double taxRate = 0.21;
+std::cout << "Tax rate: " << taxRate << "\n";
+taxRate = 0.25; // This will fail because taxRate is constant.
+```
+
+Trying to assign a new value to `taxRate` later in the program causes a compiler error.
