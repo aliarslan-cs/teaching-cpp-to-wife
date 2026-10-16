@@ -3,7 +3,7 @@
 The purpose of this lab is to get you started. You will build and run a program that displays simple text on the screen.
 
 # Background
-
+        
 The build information is already set up. The compiler and build tools are already installed using the [C++ setup guide](../../setup-instructions/setup-cpp.md). You can test this by opening a terminal, pressing Ctrl + ` (backtick), and entering:
 
     g++ --version
