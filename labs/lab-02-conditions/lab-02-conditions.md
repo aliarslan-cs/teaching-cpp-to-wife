@@ -45,6 +45,32 @@ int main() {
 
 The condition `temperature >= 20` asks whether `temperature` is at least `20`. Because `22` is greater than `20`, the condition is true and the first message is printed.
 
+## Multiple Conditions with `else if`
+
+Use `else if` when there are more than two possible outcomes. C++ checks the conditions from top to bottom and runs only the first matching block. The final `else` handles every value that did not match an earlier condition.
+
+```cpp
+#include <iostream>
+
+int main() {
+    int score = 76;
+
+    if (score >= 90) {
+        std::cout << "Excellent work!\n";
+    } else if (score >= 75) {
+        std::cout << "Good work!\n";
+    } else if (score >= 60) {
+        std::cout << "You passed.\n";
+    } else {
+        std::cout << "Keep practicing.\n";
+    }
+
+    return 0;
+}
+```
+
+Since `score` is `76`, the program prints `Good work!`. Try changing `score` to values such as `95`, `65`, and `50` to see the other branches.
+
 # Task
 
 Create a program that prints a message about a person's age.
@@ -52,9 +78,11 @@ Create a program that prints a message about a person's age.
 1. Create a file called `if-else.cpp` in the `labs\lab-02-conditions\` directory.
 2. Add the `iostream` header and create a `main` function.
 3. Create an `int` variable called `age` and give it a value.
-4. Use an `if` statement to check whether `age` is at least `18`.
-5. Print `You can vote.` when the condition is true. Otherwise, print `You cannot vote yet.`
-6. Compile and run the program. Change the age and run it again to see the other message.
+4. Use an `if`, an `else if`, and an `else` statement to choose between three age groups:
+    - Print `You are a child.` when `age` is less than `13`.
+    - Print `You are a teenager.` when `age` is at least `13` but less than `18`.
+    - Print `You are an adult.` for every other age.
+5. Compile and run the program. Change the age and run it again to see each message.
 
 ## Execution commands
 
