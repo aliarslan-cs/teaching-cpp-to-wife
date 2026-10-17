@@ -104,7 +104,7 @@ int main() {
 
 Create a program that asks the user about a snack purchase and prints a summary.
 
-1. Create a file called `input-output.cpp` in the `labs\lab-05-standard-library\` directory.
+1. Create a file called `input-output.cpp` in the `labs\lab-06-standard-library\` directory.
 2. Add the `iostream` and `string` headers, then create a `main` function.
 3. Create a `std::string` variable called `snackName`, an `int` variable called `quantity`, and a `double` variable called `price`.
 4. Use `std::cout` and `std::cin` to ask the user for the snack name, quantity, and price of one snack.
@@ -116,7 +116,7 @@ Create a program that asks the user about a snack purchase and prints a summary.
 
 Enter in terminal:
 
-    g++ -g -Wall -Wextra -std=c++17 .\labs\lab-05-standard-library\input-output.cpp -o input-output.exe
+    g++ -g -Wall -Wextra -std=c++17 .\labs\lab-06-standard-library\input-output.cpp -o input-output.exe
 
 And then run the produced artifact by running the command:
 

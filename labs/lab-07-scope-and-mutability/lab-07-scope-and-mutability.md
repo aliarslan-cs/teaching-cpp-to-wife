@@ -143,7 +143,7 @@ Use `auto` when the type is obvious from the value. Do not use it when it would 
 
 Create a program that calculates a study plan.
 
-1. Create a file called `scope.cpp` in the `labs\lab-06-scope-and-mutability\` directory.
+1. Create a file called `scope.cpp` in the `labs\lab-07-scope-and-mutability\` directory.
 2. Add the `iostream` header and create a `main` function.
 3. Create a `constexpr int` called `daysInWeek` with the value `7`.
 4. Create a second `constexpr int` called `studyHoursPerDay`, then use it and `daysInWeek` to create a third `constexpr int` called `studyHoursPerWeek`.
@@ -156,7 +156,7 @@ Create a program that calculates a study plan.
 
 Enter in terminal:
 
-    g++ -g -Wall -Wextra -std=c++17 .\labs\lab-06-scope-and-mutability\scope.cpp -o scope.exe
+    g++ -g -Wall -Wextra -std=c++17 .\labs\lab-07-scope-and-mutability\scope.cpp -o scope.exe
 
 And then run the produced artifact by running the command:
 
