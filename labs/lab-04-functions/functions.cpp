@@ -9,7 +9,8 @@ void printGoodbye () {
 }
 
 int main() {
-    printGreeting(); printGoodbye();
+    printGreeting();
+    printGoodbye();
 
 return 0;
 }
