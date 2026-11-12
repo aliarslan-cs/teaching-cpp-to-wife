@@ -11,7 +11,7 @@ void printTable(int number) {
 
 
 int main() {
-    int number = 2;
+    int number =4;
     printTable(number);
     return 0;
 }
