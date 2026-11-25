@@ -7,15 +7,15 @@ int main() {
     double price;
 
 
-    std::cout << "Lays: ";
+    std::cout << "Name of the snack: ";
     std::cin >> snackName;
     
 
-    std::cout << "3: ";
+    std::cout << "Quantity of the snack: ";
     std::cin >> quantity;
 
 
-    std::cout << "5: ";
+    std::cout << "price of one snack: ";
     std::cin >> price;
 
     double totalcost = quantity * price;
