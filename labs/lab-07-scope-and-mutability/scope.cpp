@@ -1,5 +1,5 @@
 #include <iostream>
-#int main () {
+int main () {
 
 constexpr int daysInWeek = 7;
 constexpr int studyHoursPerDay = 2;
@@ -16,8 +16,8 @@ double totalBreakHours = breakHoursPerDay * daysInWeek;
 auto completedHours = 10;
     std::cout << "Completed hours (old):" << completedHours << std::endl;
 
-completedHours + = 5;
-    std::cout << "Completed hours (new):" << completedHours << std::endl;
+completedHours += 5;
+    std::cout << "Completed hours (updated):" << completedHours << std::endl;
 
     {
         int extraHours = 3;
